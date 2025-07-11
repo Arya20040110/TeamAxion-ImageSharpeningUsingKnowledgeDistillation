@@ -1,17 +1,17 @@
 ## ✨ Project Highlights: *Image Sharpening Using Knowledge Distillation*
 
-### 🏁 Outcomes: What We Achieved
+### 🏁 Outcomes:
 
-In this project, we successfully developed a real-time image sharpening system using a teacher–student model framework through Knowledge Distillation. A deep convolutional neural network (the teacher) was trained to restore sharpness to blurry images. Then, a lightweight student model was trained to replicate the teacher’s output while maintaining a drastically reduced computational footprint. Despite being compact, the student model preserved high image quality, achieving average SSIM scores above 0.90 on unseen test images. Additionally, the student model ran at speeds of 30 to 60 frames per second, making it perfectly suited for real-time applications like video conferencing, where bandwidth limitations often lead to degraded image quality. The project achieved its primary objective — balancing visual fidelity and processing efficiency.
+In this project, we developed a real-time image sharpening system using the teacher–student model paradigm with knowledge distillation. A deep convolutional neural network (the teacher) was tasked with restoring sharpness to blurry images, then a lightweight student model was trained to reproduce the teacher’s output with significantly lower computational costs. The compacted student model preserved image quality, achieving average SSIM scores exceeding 0.90 on unseen test images. Furthermore, the student model executed at 30 to 60 fps, which made it ideal for real-time scenarios such as video conferencing, where bandwidth constraints worsen image quality. The project met its main goal: achieving the desired balance between visual processing precision and operational efficiency.
 
-### ⚠️ Limitations: Every Hero Has a Weakness
 
-While the student model achieved excellent performance, there were a few challenges and constraints. First, although the student closely mimicked the teacher’s output, it exhibited minor loss of ultra-fine image details in some cases — a typical trade-off when compressing large models. The training process of the teacher model was also resource-intensive due to its deep architecture and large number of parameters. Furthermore, the dataset used was relatively modest in size, with 377 images in total. Although the results were strong, a larger and more diverse dataset would further validate the model’s robustness under various degradation scenarios and lighting conditions.
+### ⚠️ Limitations: 
 
-### 🚀 Future Scope: Where We’re Headed
+The student model performed really well, but it faced some hurdles and limits. For starters even though the student copied the teacher's output, it sometimes lost tiny image details — a common issue when you shrink big models. Training the teacher model also took a lot of computing power because of its complex design and many settings. Also, the dataset wasn't that big, with 377 images. The results looked good, but using more varied images would show how well the model handles different image problems and lighting.
 
-The promising results open up multiple paths for future enhancement. One immediate direction is expanding the dataset with a wider range of real-world blurred images, including motion blur, low-light conditions, and compression artifacts. Integrating modern techniques like attention mechanisms or multi-scale feature extraction into the student model could further boost the model’s ability to reconstruct fine-grained details. On the loss function side, replacing standard MAE loss with perceptual losses like VGG-based loss or MS-SSIM could lead to even more visually pleasing results. Finally, optimizing the trained student model for deployment on edge devices via TensorFlow Lite or ONNX would enable use in mobile apps, webcams, and IoT systems for live image enhancement — making the system truly production-ready.
+### 🚀 Future Scope:
 
+The encouraging outcomes pave several directions for further optimization. One immediate avenue is broadening the dataset with more types of real-world blur, such as motion blur, low-light and compression artifacts. Incorporating recent advances such as attention mechanisms or multi-scale feature extraction into the student model could enhance the model’s capacity to reconstruct details. On the loss function side, swapping in perceptual losses like VGG or MS-SSIM instead of standard MAE loss can produce even more visually pleasing results. Last, fine-tuning the trained student model for edge device deployment using TensorFlow Lite or ONNX would allow use in mobile applications, webcams, and IoT devices for real-time image super-resolution. This renders the system effectively production-ready.
 ---
 
 ### 👨‍💻 Authors
@@ -26,5 +26,3 @@ Saintgits Group of Institutions, Kottayam, Kerala
 This project was made possible thanks to the generous support of the **Intel© Unnati Program**. We extend our heartfelt gratitude to our mentors, **Er. Anish M George** and **Mr. Siju Swamy**, for their expert guidance and constant encouragement throughout this journey. Their insights shaped the technical depth and practical focus of this work. We also thank **Saintgits College of Engineering and Technology** for providing the platform, resources, and academic atmosphere essential to our development. Finally, we appreciate the contributions of the wider AI/ML research community whose open-source efforts in image enhancement and model compression inspired and informed our work.
 
 ---
-
-🔗 *For more information or collaboration opportunities, feel free to connect with us through the project repository or institutional contact pages.*
