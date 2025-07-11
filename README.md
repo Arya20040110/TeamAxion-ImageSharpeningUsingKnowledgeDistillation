@@ -12,6 +12,7 @@ The student model performed really well, but it faced some hurdles and limits. F
 ### 🚀 Future Scope:
 
 The encouraging outcomes pave several directions for further optimization. One immediate avenue is broadening the dataset with more types of real-world blur, such as motion blur, low-light and compression artifacts. Incorporating recent advances such as attention mechanisms or multi-scale feature extraction into the student model could enhance the model’s capacity to reconstruct details. On the loss function side, swapping in perceptual losses like VGG or MS-SSIM instead of standard MAE loss can produce even more visually pleasing results. Last, fine-tuning the trained student model for edge device deployment using TensorFlow Lite or ONNX would allow use in mobile applications, webcams, and IoT devices for real-time image super-resolution. This renders the system effectively production-ready.
+
 ---
 
 ### 👨‍💻 Authors
